@@ -1,3 +1,18 @@
+/* YOUR FAM */
+
+button {
+  background-color: green;
+}
+
+div.fam {
+  display: none;
+}
+
+div.fam img {
+  width: 300px;
+  height: auto;
+}
+
 /* CONTACT */
 
 #bio_helen {
