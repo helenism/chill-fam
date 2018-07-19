@@ -6,9 +6,9 @@ app = Flask('chillfam')
 def index():
     return render_template('home.html')
 
-@app.route('/findyourfam')
-def findyourfam():
-    return render_template('findyourfam.html')
+@app.route('/yourfam')
+def yourfam():
+    return render_template('yourfam.html')
 
 @app.route('/contact')
 def contact():
