@@ -15,6 +15,9 @@ div.fam img {
 
 /* CONTACT */
 
+.bio {
+  display: inline-block;
+}
 #bio_helen {
   background-color: blue;
 }
