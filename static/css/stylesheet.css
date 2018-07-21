@@ -1,8 +1,11 @@
-/* YOUR FAM */
+/* HOME */
 
-button {
-  background-color: green;
+.title {
+  font-family: 'Knewave', cursive;
+  color: orange;
 }
+
+/* YOUR FAM */
 
 div.fam {
   display: none;
@@ -28,4 +31,14 @@ div.fam img {
 
 #bio_zainab {
   background-color: green;
+}
+
+/* FOOTER */
+#footer {
+  background: cyan;
+}
+
+#copyright {
+  font-size: 16px;
+  margin-top: 40px;
 }
