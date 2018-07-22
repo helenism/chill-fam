@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta chartset = "utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style type="text/css">
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #42b078;
+}
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+}
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.img-fluid{height: 295px}
+</style>
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2> <Text tester> </h2>
+      </div>
+
+
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src="https://assets.bonappetit.com/photos/57ad55cc1b33404414975624/16:9/w_1000,c_limit/slow-cooked-salmon-chickpeas-and-greens.jpg" class="img-fluid"><div class="overlay">
+          <h2>SALMON</h2>
+          <p> Thank the omega-3 fats in salmon (as well as in sardines and anchovies) for influencing your mood. In one study, medical students taking an omega-3 supplement enjoyed a reduction in their anxiety levels</p>
+          <p><a href="https://www.bbcgoodfood.com/recipes/collection/salmon">CLICK HERE FOR RECIPES</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src="https://3i4wp932v0ofy2m563radk51-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/Green-Tea.png" class="img-fluid"><div class="overlay">
+          <h2>GREEN TEA</h2>
+          <p> Drink green tea-packed with theanine, which increases the brain’s output of relaxation-inducing alpha waves and reduces the output of tension-making beta waves. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/18/09/2048x1365/gallery-1519670611-avocado.jpg?resize=480:*" class="img-fluid"><div class="overlay">
+          <h2>AVOCADO</h2>
+          <p> Besides being an excellent source of healthy fat, these fruits can also help destress your body. They're rich in glutathione, a substance that blocks intestinal absorption of certain fats that cause oxidative damage (the process that creates free radicals, the harmful compounds responsible for aging). </p>
+          <p><a href="https://www.bbcgoodfood.com/search/recipes?query=avocado+recipes">CLICK HERE FOR RECIPES</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src="https://www.homemadeitaliancooking.com/wp-content/uploads/2016/04/broccoli-closeup-2.jpg" class="img-fluid"><div class="overlay">
+          <h2>BROCOCLI</h2>
+          <p>Broccoli is packed with a ton of vitamins including stress-fighting B vitamins and folic acid (a member of the B vitamin family). These nutrients relieve stress, anxiety, and depression. To preserve these vitamins and get the most out of what broccoli has to offer, enjoy it raw in a salad.</p>
+          <p><a href="https://www.bbcgoodfood.com/search/recipes?query=brocolli+recipes">CLICK HERE FOR RECIPES</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src=" https://hips.hearstapps.com/ghk.h-cdn.co/assets/18/05/2560x1706/gallery-1517593503-bananas.jpg?resize=768:*"
+
+        class="img-fluid" class="img-fluid"><div class="overlay">
+          <h2>BANANAS</h2>
+          <p>Bananas are high in potassium, which aids in the regulation of blood pressure. Lots of other fruits and vegetables contain potassium, but it’s especially high in bananas.They can also relieve heartburn and keep your blood sugar levels up.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src="http://www.womenfitness.net/wp/wp-content/uploads/2016/09/dark-chocolate.jpg"><div class="overlay">
+          <h2>DARK CHOCOLATE</h2>
+          <p> A healthy indulgence (as long as you watch how much you eat), dark chocolate has been shown to reduce stress hormones, including cortisol. And its antioxidants can relax the walls of your blood vessels, hence lowering blood pressure and enhancing circulation.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src="https://static.wixstatic.com/media/f6fb6a_ebba6190d8c044f49bc5553118bea56b~mv2_d_1920_1280_s_2.jpg/v1/fill/w_630,h_420,al_c,q_80,usm_0.66_1.00_0.01/f6fb6a_ebba6190d8c044f49bc5553118bea56b~mv2_d_1920_1280_s_2.webp" class="img-fluid"><div class="overlay">
+          <h2>BLEBERRIES</h2>
+          <p>CNN reports that the antioxidants and phytonutrients in these little berries can help "improve your body's response to stress and fight stress-related free radicals. "</p>
+          <p><a href="https://www.bbcgoodfood.com/search/recipes?query=blueberries+recipes">CLICK HERE FOR RECIPES</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src="http://sphm-finder-site-production.s3-ap-southeast-1.amazonaws.com/2018/03/food1_5.jpg " class="img-fluid"><div class="overlay">
+          <h2>WALNUTS</h2>
+          <p>Studies conducted by the National Institutes of Health found that the omega-3 fatty acids in walnuts help regulate the stress hormones cortisol and adrenaline.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-4">
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+      <div class="hovereffect">
+        <img src="https://www.avogel.ch/img/client/ihre_ernaehrung/Ernaehrungsthemen/610x489/milch-kuhmilch-laktose-610-fotolia-min.jpg?id=32864&time=1496414151" class="img-fluid"><div class="overlay">
+          <h2>MILK</h2>
+          <p>Milk is high in vitamin D, which is a nutrient associated with happiness. And the California Milk Advisory Board reports that the tradition of drinking warm milk before bed comes from the science related to the release of tryptophan, which helps decrease stress</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+<script src="jquery-2.1.4.min.js"> </script>
