@@ -2,15 +2,18 @@
 
 .title {
   font-family: 'Knewave', cursive;
+}
+
+.the_chill {
   color: #fff;
 }
 
 .the_f {
-  color: rgba(139, 198, 108, 1.00);
+  color: rgba(0, 141, 85, 1.00);
 }
 
 .the_a {
-  color: rgba(255, 226, 33, 1.00);
+  color: rgba(218, 152, 92, 1.00);
 }
 
 .the_m {
@@ -30,11 +33,23 @@
 }
 
 /* NAV */
+/*
+.fa-utensils {
+  color: rgba(0, 141, 85, 1.00);
+}
 
+.fa-table-tennis {
+  color: rgba(218, 152, 92, 1.00);
+}
+
+.fa-music {
+  color: rgba(205, 67, 72, 1.00);
+}
+*/
 /* HOME */
 
 #home_top {
-  background: grey;
+  background: rgba(170, 178, 191, 1.00);
   height: 40vh;
   padding: 0 20px;
 }
@@ -62,6 +77,21 @@
   #home_top .title {
     font-size: 100px;
   }
+}
+
+/* ALL FAM */
+
+.fam_top {
+  font-size: 30px;
+}
+
+.fam_top h1 {
+  font-size: 50px;
+}
+
+.fam_top p {
+  color: rgba(140, 159, 179, 1.00);
+  line-height: 30px;
 }
 
 /*FOOD*/
@@ -172,6 +202,7 @@
   cursor: default;
   background: #42b078;
 }
+
 .hovereffect .overlay {
   width: 100%;
   height: 100%;
@@ -181,6 +212,7 @@
   left: 0;
   padding: 50px 20px;
 }
+
 .hovereffect img {
   display: block;
   position: relative;
@@ -188,17 +220,19 @@
   width: calc(100% + 20px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .hovereffect:hover img {
   opacity: 0.4;
   filter: alpha(opacity=40);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
+
 .hovereffect h2 {
   text-transform: uppercase;
   color: #fff;
@@ -209,6 +243,7 @@
   padding: 0.5em 0;
   background-color: transparent;
 }
+
 .hovereffect h2:after {
   position: absolute;
   bottom: 0;
@@ -219,29 +254,35 @@
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
+
 .hovereffect:hover h2:after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
+
 .hovereffect a, .hovereffect p {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
 }
+
 .hovereffect:hover a, .hovereffect:hover p {
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-.img-fluid{height: 295px}
+
+.img-fluid {
+  height: 295px
+}
 
 @media only screen and (min-width: 768px) {}
 
@@ -255,6 +296,11 @@
   font-size: 30px;
   margin: 50px 0 70px 0;
   padding: 20px;
+  background-color: rgba(170, 178, 191, 1.00)
+}
+
+#fam_btn:hover {
+  background-color: rgba(39, 44, 53, 1.00);
 }
 
 div.fam, .card-deck {
@@ -275,15 +321,15 @@ div.fam img {
 /* CONTACT */
 
 #bio_helen {
-  background-color: blue;
+  background-color: rgba(0, 141, 85, 1.00);
 }
 
 #bio_josie {
-  background-color: orange;
+  background-color: rgba(218, 152, 92, 1.00);
 }
 
 #bio_zainab {
-  background-color: green;
+  background-color: rgba(205, 67, 72, 1.00);
 }
 
 .bio_pic {
@@ -294,6 +340,11 @@ div.fam img {
 }
 
 @media only screen and (min-width: 900px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .bio {
     margin-right: 10px;
     max-width: 320px;
@@ -301,6 +352,7 @@ div.fam img {
   #bio_zainab {
     margin-right: 0;
   }
+
   /* FOOTER */
   footer {
     padding: 10px;
