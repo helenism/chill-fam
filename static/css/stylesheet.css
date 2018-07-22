@@ -68,21 +68,26 @@
 
 #fam_btn {
   font-size: 30px;
+  margin: 50px 0 70px 0;
+  padding: 20px;
 }
 
-div.fam {
+div.fam, .card-deck {
   display: none;
 }
 
 div.fam img {
-  width: 300px;
-  height: auto;
+  height: 200px;
+  width: auto;
+}
+
+.card-deck {
+  margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 768px) {}
 
 /* CONTACT */
-
 
 #bio_helen {
   background-color: blue;
@@ -96,24 +101,33 @@ div.fam img {
   background-color: green;
 }
 
-@media only screen and (min-width: 768px) {}
-
-/* FOOTER */
-
-footer {
-  padding: 10px;
-  background: rgba(52, 58, 64, 1.00);
-  color: #fff;
-}
-
-i {
-  padding: 5px;
-  color: #fff;
-}
-
-#copyright p {
-  font-size: 16px;
+.bio_pic {
+  width: 200px;
+  height: auto;
+  display: block;
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 900px) {
+  .bio {
+    margin-right: 10px;
+    max-width: 320px;
+  }
+  #bio_zainab {
+    margin-right: 0;
+  }
+  /* FOOTER */
+  footer {
+    padding: 10px;
+    background: rgba(52, 58, 64, 1.00);
+    color: #fff;
+  }
+  i {
+    padding: 5px;
+    color: #fff;
+  }
+  #copyright p {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 768px) {}
