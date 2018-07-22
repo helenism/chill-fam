@@ -1,100 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta chartset = "utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+{% extends 'layout.html' %}
 
-<style type="text/css">
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  background: #42b078;
-}
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  padding: 50px 20px;
-}
-.hovereffect img {
-  display: block;
-  position: relative;
-  max-width: none;
-  width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.hovereffect:hover img {
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  overflow: hidden;
-  padding: 0.5em 0;
-  background-color: transparent;
-}
-.hovereffect h2:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
-}
-.hovereffect:hover h2:after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-}
-.hovereffect:hover a, .hovereffect:hover p {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-.img-fluid{height: 295px}
-</style>
-</head>
-
-
-<body>
+{% block body %}
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
@@ -167,14 +73,14 @@
         class="img-fluid" class="img-fluid"><div class="overlay">
           <h2>BANANAS</h2>
           <p>Bananas are high in potassium, which aids in the regulation of blood pressure. Lots of other fruits and vegetables contain potassium, but it’s especially high in bananas.They can also relieve heartburn and keep your blood sugar levels up.</p>
-          
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
-        
+
 <div class="col-sm-4">
   <div class="container" style="margin-top:30px;">
     <div class="row">
@@ -182,7 +88,7 @@
         <img src="http://www.womenfitness.net/wp/wp-content/uploads/2016/09/dark-chocolate.jpg"><div class="overlay">
           <h2>DARK CHOCOLATE</h2>
           <p> A healthy indulgence (as long as you watch how much you eat), dark chocolate has been shown to reduce stress hormones, including cortisol. And its antioxidants can relax the walls of your blood vessels, hence lowering blood pressure and enhancing circulation.</p>
-          
+
         </div>
       </div>
     </div>
@@ -210,7 +116,7 @@
         <img src="http://sphm-finder-site-production.s3-ap-southeast-1.amazonaws.com/2018/03/food1_5.jpg " class="img-fluid"><div class="overlay">
           <h2>WALNUTS</h2>
           <p>Studies conducted by the National Institutes of Health found that the omega-3 fatty acids in walnuts help regulate the stress hormones cortisol and adrenaline.</p>
-          
+
         </div>
       </div>
     </div>
@@ -235,3 +141,4 @@
 </div>
 
 <script src="jquery-2.1.4.min.js"> </script>
+{% endblock %}
