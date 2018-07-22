@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Chill FAM</title>
-  <!-- BOOTSTRAP JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <!-- BOOTSTRAP CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- FONT AWSEOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
   <!-- CSS -->
@@ -18,13 +19,12 @@
 </head>
 
 <body>
-  {% include 'includes/_navbar.html' %}
-  <div class="container">
-    {% block body %}{% endblock %}
+  <div class="desktop">
+    {% include 'includes/_navbar.html' %} {% block body %}{% endblock %} {% include 'includes/_footer.html' %}
   </div>
-  {% include 'includes/_footer.html' %}
+
   <script>
-  // RANDOM FAM COMBO GENERATOR
+    // RANDOM FAM COMBO GENERATOR
     function randomcombo() {
       $(".fam").hide()
 
@@ -34,9 +34,9 @@
       document.getElementById("foodnum").innerHTML = x;
       document.getElementById("actnum").innerHTML = y;
       document.getElementById("musicnum").innerHTML = z;
-      $("#fooddiv"+x).show();
-      $("#actdiv"+y).show();
-      $("#musicdiv"+z).show();
+      $("#fooddiv" + x).show();
+      $("#actdiv" + y).show();
+      $("#musicdiv" + z).show();
     };
   </script>
 </body>

@@ -1,11 +1,74 @@
-/* HOME */
+/* ALL */
 
 .title {
   font-family: 'Knewave', cursive;
   color: orange;
 }
 
+.section {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+  }
+}
+
+/* NAV */
+
+/* HOME */
+
+#home_top {
+  background: grey;
+  height: 40vh;
+  padding: 0 20px;
+}
+
+#home_top .title {
+  font-size: 50px;
+  padding-top: 60px;
+}
+
+#home_middle {
+  background-color: rgba(176, 245, 102, 1.00);
+  height: 70vh;
+}
+
+#home_bottom {
+  background-color: rgba(92, 201, 245, 1.00);
+  height: 70vh;
+}
+
+@media only screen and (min-width: 768px) {
+  #home_top {
+    height: 50vh;
+    padding: 20px;
+  }
+  #home_top .title {
+    font-size: 100px;
+  }
+}
+
+/*FOOD*/
+
+@media only screen and (min-width: 768px) {}
+
+/*ACTIVITIES*/
+
+@media only screen and (min-width: 768px) {}
+
+/*MUSIC*/
+
+@media only screen and (min-width: 768px) {}
+
 /* YOUR FAM */
+
+#fam_btn {
+  font-size: 30px;
+}
 
 div.fam {
   display: none;
@@ -16,11 +79,11 @@ div.fam img {
   height: auto;
 }
 
+@media only screen and (min-width: 768px) {}
+
 /* CONTACT */
 
-.bio {
-  display: inline-block;
-}
+
 #bio_helen {
   background-color: blue;
 }
@@ -33,12 +96,24 @@ div.fam img {
   background-color: green;
 }
 
+@media only screen and (min-width: 768px) {}
+
 /* FOOTER */
-#footer {
-  background: cyan;
+
+footer {
+  padding: 10px;
+  background: rgba(52, 58, 64, 1.00);
+  color: #fff;
 }
 
-#copyright {
-  font-size: 16px;
-  margin-top: 40px;
+i {
+  padding: 5px;
+  color: #fff;
 }
+
+#copyright p {
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {}
