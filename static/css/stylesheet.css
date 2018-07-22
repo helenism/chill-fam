@@ -2,7 +2,19 @@
 
 .title {
   font-family: 'Knewave', cursive;
-  color: orange;
+  color: #fff;
+}
+
+.the_f {
+  color: rgba(139, 198, 108, 1.00);
+}
+
+.the_a {
+  color: rgba(255, 226, 33, 1.00);
+}
+
+.the_m {
+  color: rgba(205, 67, 72, 1.00);
 }
 
 .section {
