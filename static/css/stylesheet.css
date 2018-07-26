@@ -295,7 +295,7 @@ img {vertical-align: middle;}
 
 /* ACTIVITIES */
 
-.hovereffect_a {
+.hover_a {
   background: #FF8C00;
 }
 
@@ -303,7 +303,7 @@ img {vertical-align: middle;}
 
 /* MUSIC */
 
-.hovereffect_m {
+.hover_m {
   background: #A52A2A;
 }
 
@@ -369,9 +369,19 @@ div.fam img {
 
 .social_buttons_us {
   background: rgba(52, 58, 64, 1.00);
-  position: relative;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 2px;
+  color: #fff;
+}
+
+.social_buttons_us a {
+  color: #fff
+}
+#repo {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  height: 45px;
 }
 
 @media only screen and (min-width: 900px) {
