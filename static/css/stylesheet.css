@@ -189,6 +189,7 @@ img {vertical-align: middle;}
 
 .fam_top {
   background-color: rgba(170, 178, 191, 1.00);
+  margin: 0;
 }
 
 
@@ -315,11 +316,15 @@ img {vertical-align: middle;}
   font-size: 30px;
   margin: 50px 0 70px 0;
   padding: 20px;
-  background-color: rgba(170, 178, 191, 1.00)
+  background-color: rgba(52, 58, 64, 1.00);
+  border: 2px solid rgba(140, 159, 179, 1.00);
+  color: #fff;
 }
 
 #fam_btn:hover {
-  background-color: rgba(39, 44, 53, 1.00);
+  background-color: rgba(140, 159, 179, 1.00);
+  border: 2px solid rgba(52, 58, 64, 1.00);
+  color: rgba(52, 58, 64, 1.00);
 }
 
 div.fam, .card-deck {
@@ -332,12 +337,18 @@ div.fam img {
 }
 
 .card-deck {
+  margin: 0 auto;
   margin-bottom: 50px;
+  max-width: 700px;
 }
 
 @media only screen and (min-width: 768px) {}
 
 /* CONTACT */
+
+#contact_middle_trio {
+  margin-top: 0;
+}
 
 #bio_helen {
   background-color: rgba(0, 141, 85, 1.00);
@@ -377,13 +388,33 @@ div.fam img {
 .social_buttons_us a {
   color: #fff
 }
+
+#email {
+  background-color: rgba(140, 159, 179, 1.00);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 1000px;
+}
+
+#email input {
+  padding: 3px;
+  border-radius: 3px;
+
+}
+
+#email button {
+  background-color: rgba(52, 58, 64, 1.00);
+  border-radius: 15px;
+  color: #fff;
+}
 #repo {
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 10px;
   height: 45px;
 }
-
 @media only screen and (min-width: 900px) {
   .flex-container {
     display: flex;
