@@ -285,7 +285,6 @@ img {vertical-align: middle;}
   height: 295px
 }
 
-@media only screen and (min-width: 768px) {}
 
 /* FOOD */
 
@@ -307,7 +306,6 @@ img {vertical-align: middle;}
   background: #A52A2A;
 }
 
-@media only screen and (min-width: 768px) {}
 
 /* YOUR FAM */
 
@@ -339,9 +337,14 @@ div.fam img {
   margin: 0 auto;
   margin-bottom: 50px;
   max-width: 700px;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: rgba(140, 159, 179, 1.00);
 }
 
-@media only screen and (min-width: 768px) {}
+.card-img-top {
+  margin: 0 auto;
+}
 
 /* CONTACT */
 
@@ -441,4 +444,3 @@ div.fam img {
     font-size: 16px;
     margin: 0 auto;
   }
-  @media only screen and (min-width: 768px) {}
